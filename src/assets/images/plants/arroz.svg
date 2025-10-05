@@ -1,0 +1,42 @@
+<svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0B2A3F"/>
+      <stop offset="100%" stop-color="#041320"/>
+    </radialGradient>
+    <linearGradient id="stalk" x1="210" y1="320" x2="210" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3CD8A8"/>
+      <stop offset="50%" stop-color="#6CF5D0"/>
+      <stop offset="100%" stop-color="#D6FFF2"/>
+    </linearGradient>
+    <linearGradient id="grain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F6F2C0"/>
+      <stop offset="100%" stop-color="#F0C16B"/>
+    </linearGradient>
+    <filter id="glow" x="-40" y="-40" width="500" height="500" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="28" result="b"/>
+      <feComposite in="b" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="420" height="420" rx="36" fill="url(#bg)"/>
+  <g filter="url(#glow)">
+    <path d="M212 360c18-60 18-160 0-220-18 60-18 160 0 220z" fill="url(#stalk)" opacity="0.9"/>
+  </g>
+  <g stroke="url(#grain)" stroke-width="6" stroke-linecap="round">
+    <path d="M212 220c-26-18-58-34-92-38"/>
+    <path d="M212 198c-34-20-70-40-118-38" opacity="0.7"/>
+    <path d="M212 240c-20-10-42-18-74-16" opacity="0.6"/>
+    <path d="M212 220c26-18 58-34 92-38"/>
+    <path d="M212 198c34-20 70-40 118-38" opacity="0.7"/>
+    <path d="M212 240c20-10 42-18 74-16" opacity="0.6"/>
+  </g>
+  <g fill="url(#grain)">
+    <ellipse cx="116" cy="180" rx="12" ry="20" transform="rotate(-16 116 180)"/>
+    <ellipse cx="140" cy="194" rx="11" ry="18" transform="rotate(-10 140 194)"/>
+    <ellipse cx="168" cy="210" rx="10" ry="17" transform="rotate(-4 168 210)"/>
+    <ellipse cx="308" cy="180" rx="12" ry="20" transform="rotate(16 308 180)"/>
+    <ellipse cx="284" cy="194" rx="11" ry="18" transform="rotate(10 284 194)"/>
+    <ellipse cx="256" cy="210" rx="10" ry="17" transform="rotate(4 256 210)"/>
+  </g>
+  <circle cx="212" cy="360" r="34" fill="rgba(76,226,208,0.35)"/>
+</svg>

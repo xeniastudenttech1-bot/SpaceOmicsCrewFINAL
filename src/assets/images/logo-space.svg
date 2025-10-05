@@ -1,0 +1,30 @@
+<svg width="220" height="64" viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logo-grad" x1="0" y1="0" x2="220" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C6B9FF"/>
+      <stop offset="45%" stop-color="#7A5AF8"/>
+      <stop offset="100%" stop-color="#7FB8A6"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46 32) scale(28 28)">
+      <stop stop-color="#F4CBEA" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#1B1538" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g filter="url(#glow)">
+    <circle cx="46" cy="32" r="26" fill="url(#orb)"/>
+    <ellipse cx="46" cy="32" rx="46" ry="14" fill="none" stroke="url(#logo-grad)" stroke-width="2"/>
+    <ellipse cx="46" cy="32" rx="46" ry="14" transform="rotate(-12 46 32)" fill="none" stroke="url(#logo-grad)" stroke-opacity="0.6" stroke-width="1.5"/>
+  </g>
+  <text x="88" y="38" fill="#F4CBEA" font-family="'Orbitron', 'Segoe UI', sans-serif" font-weight="700" font-size="26">Space</text>
+  <text x="152" y="38" fill="url(#logo-grad)" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="26">Omics</text>
+  <text x="88" y="52" fill="#7FB8A6" font-family="'Inter', sans-serif" font-weight="500" font-size="12" letter-spacing="0.3em">CREW</text>
+  <defs>
+    <filter id="glow" x="-10" y="-8" width="112" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>

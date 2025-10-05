@@ -1,0 +1,241 @@
+{
+  "especies": [
+    {
+      "especie_id": 1,
+      "nombre_cientifico": "Oryza sativa",
+      "nombre_comun": "Arroz",
+      "familia": "Poaceae",
+      "parte_comestible": "grano",
+      "via_fotosintesis": "C3",
+      "imagen_url": "/src/assets/images/plants/arroz.svg"
+    },
+    {
+      "especie_id": 2,
+      "nombre_cientifico": "Zea mays",
+      "nombre_comun": "Maíz",
+      "familia": "Poaceae",
+      "parte_comestible": "grano",
+      "via_fotosintesis": "C4",
+      "imagen_url": "/src/assets/images/plants/maiz.svg"
+    },
+    {
+      "especie_id": 3,
+      "nombre_cientifico": "Solanum lycopersicum",
+      "nombre_comun": "Tomate",
+      "familia": "Solanaceae",
+      "parte_comestible": "fruto",
+      "via_fotosintesis": "C3",
+      "imagen_url": "/src/assets/images/plants/tomate.svg"
+    },
+    {
+      "especie_id": 4,
+      "nombre_cientifico": "Lactuca sativa",
+      "nombre_comun": "Lechuga",
+      "familia": "Asteraceae",
+      "parte_comestible": "hoja",
+      "via_fotosintesis": "C3",
+      "imagen_url": "/src/assets/images/plants/lechuga.svg"
+    },
+    {
+      "especie_id": 5,
+      "nombre_cientifico": "Phaseolus vulgaris",
+      "nombre_comun": "Frijol",
+      "familia": "Fabaceae",
+      "parte_comestible": "semilla",
+      "via_fotosintesis": "C3",
+      "imagen_url": "/src/assets/images/plants/frijol.svg"
+    },
+    {
+      "especie_id": 6,
+      "nombre_cientifico": "Cenchrus purpureus",
+      "nombre_comun": "Pasto Napier",
+      "familia": "Poaceae",
+      "parte_comestible": "no comestible",
+      "via_fotosintesis": "C4",
+      "imagen_url": "/src/assets/images/plants/pasto-napier.svg"
+    }
+  ],
+  "experimentos": [
+    {
+      "experimento_id": 1,
+      "especie_id": 1,
+      "sistema_cultivo_id": 6,
+      "fuente_id": 1,
+      "env_co2_ppm": 800,
+      "env_temp_c": 26.0,
+      "env_fotoperiodo_h": 12.0,
+      "env_led_nm": "450/660",
+      "env_ph": 5.8,
+      "env_ec_conductividad": 1.8
+    },
+    {
+      "experimento_id": 3,
+      "especie_id": 2,
+      "sistema_cultivo_id": 2,
+      "fuente_id": 2,
+      "env_co2_ppm": 1200,
+      "env_temp_c": 28.0,
+      "env_fotoperiodo_h": 14.0,
+      "env_led_nm": "450/660",
+      "env_ph": 6.0,
+      "env_ec_conductividad": 2.2
+    },
+    {
+      "experimento_id": 5,
+      "especie_id": 3,
+      "sistema_cultivo_id": 3,
+      "fuente_id": 3,
+      "env_co2_ppm": 1000,
+      "env_temp_c": 24.0,
+      "env_fotoperiodo_h": 16.0,
+      "env_led_nm": "450/660/730",
+      "env_ph": 6.1,
+      "env_ec_conductividad": 2.4
+    },
+    {
+      "experimento_id": 6,
+      "especie_id": 3,
+      "sistema_cultivo_id": 1,
+      "fuente_id": 7,
+      "env_co2_ppm": 1200,
+      "env_temp_c": 25.0,
+      "env_fotoperiodo_h": 16.0,
+      "env_led_nm": "450/660",
+      "env_ph": 6.0,
+      "env_ec_conductividad": 2.2
+    },
+    {
+      "experimento_id": 7,
+      "especie_id": 4,
+      "sistema_cultivo_id": 1,
+      "fuente_id": 4,
+      "env_co2_ppm": 1200,
+      "env_temp_c": 22.0,
+      "env_fotoperiodo_h": 16.0,
+      "env_led_nm": "450/660",
+      "env_ph": 5.9,
+      "env_ec_conductividad": 1.6
+    }
+  ],
+  "resultado": [
+    {
+      "resultado_id": 1,
+      "experimento_id": 1,
+      "rendimiento_g_m2_d": 4.0,
+      "agua_por_kcal_ml": 1200.0,
+      "dias_cosecha": 120,
+      "supervivencia_pct": 92.0
+    },
+    {
+      "resultado_id": 3,
+      "experimento_id": 3,
+      "rendimiento_g_m2_d": 7.2,
+      "agua_por_kcal_ml": 1100.0,
+      "dias_cosecha": 120,
+      "supervivencia_pct": 90.0
+    },
+    {
+      "resultado_id": 5,
+      "experimento_id": 5,
+      "rendimiento_g_m2_d": 8.0,
+      "agua_por_kcal_ml": 700.0,
+      "dias_cosecha": 100,
+      "supervivencia_pct": 95.0
+    },
+    {
+      "resultado_id": 6,
+      "experimento_id": 6,
+      "rendimiento_g_m2_d": 9.0,
+      "agua_por_kcal_ml": 700.0,
+      "dias_cosecha": 100,
+      "supervivencia_pct": 95.0
+    },
+    {
+      "resultado_id": 7,
+      "experimento_id": 7,
+      "rendimiento_g_m2_d": 100.0,
+      "agua_por_kcal_ml": 1500.0,
+      "dias_cosecha": 30,
+      "supervivencia_pct": 98.0
+    }
+  ],
+  "fuente_estudio": [
+    {
+      "fuente_id": 1,
+      "doi": "10.1234/astrobio.2025.001",
+      "url": "https://doi.org/10.1234/astrobio.2025.001",
+      "titulo": "Growth of Oryza sativa under controlled CO2",
+      "anio": 2023,
+      "repositorio": "PubSpace",
+      "autores": "Lee et al."
+    },
+    {
+      "fuente_id": 2,
+      "doi": "10.1234/astrobio.2025.002",
+      "url": "https://doi.org/10.1234/astrobio.2025.002",
+      "titulo": "C4 maize performance under APH LEDs",
+      "anio": 2024,
+      "repositorio": "NTRS",
+      "autores": "Garcia et al."
+    },
+    {
+      "fuente_id": 3,
+      "doi": "10.1234/astrobio.2025.003",
+      "url": "https://doi.org/10.1234/astrobio.2025.003",
+      "titulo": "Tomato fruit quality in Veggie analog",
+      "anio": 2022,
+      "repositorio": "PubSpace",
+      "autores": "Wang et al."
+    },
+    {
+      "fuente_id": 4,
+      "doi": "10.1234/astrobio.2025.004",
+      "url": "https://doi.org/10.1234/astrobio.2025.004",
+      "titulo": "Lettuce rapid cycle for space menus",
+      "anio": 2023,
+      "repositorio": "PubSpace",
+      "autores": "Ramirez et al."
+    },
+    {
+      "fuente_id": 7,
+      "doi": "10.1234/astrobio.2025.007",
+      "url": "https://doi.org/10.1234/astrobio.2025.007",
+      "titulo": "LED spectrum optimization for leafy greens",
+      "anio": 2024,
+      "repositorio": "PubSpace",
+      "autores": "Ito et al."
+    }
+  ],
+  "conjunto_omico": [
+    {
+      "omico_id": 5,
+      "experimento_id": 5,
+      "acceso_genelab": "GLDS-8004",
+      "tipo_omico": "transcriptómica",
+      "tipo_ensayo": "RNA-seq",
+      "tejido": "hoja",
+      "genes_diff_expr": 162,
+      "enlace": "https://osdr.nasa.gov/studies/GLDS-8004"
+    },
+    {
+      "omico_id": 6,
+      "experimento_id": 6,
+      "acceso_genelab": "GLDS-8005",
+      "tipo_omico": "transcriptómica",
+      "tipo_ensayo": "RNA-seq",
+      "tejido": "raíz",
+      "genes_diff_expr": 165,
+      "enlace": "https://osdr.nasa.gov/studies/GLDS-8005"
+    },
+    {
+      "omico_id": 7,
+      "experimento_id": 7,
+      "acceso_genelab": "GLDS-8010-like",
+      "tipo_omico": "transcriptómica",
+      "tipo_ensayo": "RNA-seq",
+      "tejido": "hoja",
+      "genes_diff_expr": 180,
+      "enlace": "#"
+    }
+  ]
+}

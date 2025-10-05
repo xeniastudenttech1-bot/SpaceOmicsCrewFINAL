@@ -1,0 +1,26 @@
+<svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgLechuga" cx="50%" cy="40%" r="62%">
+      <stop offset="0%" stop-color="#082516"/>
+      <stop offset="100%" stop-color="#04160C"/>
+    </radialGradient>
+    <radialGradient id="leaf" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#C9FFDF"/>
+      <stop offset="50%" stop-color="#76F5AF"/>
+      <stop offset="100%" stop-color="#2BCB75"/>
+    </radialGradient>
+    <filter id="leafGlow" x="-40" y="-40" width="500" height="500" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="26" result="g"/>
+      <feComposite in="g" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="420" height="420" rx="36" fill="url(#bgLechuga)"/>
+  <g filter="url(#leafGlow)">
+    <path d="M210 110c-74 0-130 60-130 130s56 110 130 110 130-40 130-110S284 110 210 110z" fill="url(#leaf)"/>
+  </g>
+  <path d="M210 120c-56 0-98 46-98 102s42 86 98 86 98-30 98-86-42-102-98-102z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="6" stroke-linecap="round" stroke-dasharray="22 18"/>
+  <path d="M210 124c-12 38-12 118 0 188" stroke="#E5FFF3" stroke-width="6" stroke-linecap="round"/>
+  <path d="M182 140c-8 30-4 84 6 122" stroke="#E5FFF3" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <path d="M238 140c8 30 4 84-6 122" stroke="#E5FFF3" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <ellipse cx="210" cy="360" rx="70" ry="20" fill="rgba(118,245,175,0.24)"/>
+</svg>

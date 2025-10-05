@@ -1,0 +1,28 @@
+<svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgNapier" cx="50%" cy="40%" r="62%">
+      <stop offset="0%" stop-color="#052016"/>
+      <stop offset="100%" stop-color="#02110A"/>
+    </radialGradient>
+    <linearGradient id="blade" x1="140" y1="360" x2="300" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#52F0B5"/>
+      <stop offset="50%" stop-color="#8CFFD5"/>
+      <stop offset="100%" stop-color="#24C98A"/>
+    </linearGradient>
+    <filter id="bladeGlow" x="-40" y="-40" width="500" height="500" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="28" result="g"/>
+      <feComposite in="g" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="420" height="420" rx="36" fill="url(#bgNapier)"/>
+  <g stroke="url(#blade)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M210 360c-40-110-20-210 10-260"/>
+    <path d="M180 360c-36-90-14-174 24-238" opacity="0.7"/>
+    <path d="M240 360c26-82 22-162-18-238" opacity="0.7"/>
+  </g>
+  <g filter="url(#bladeGlow)" fill="url(#blade)">
+    <path d="M190 140c-14 60-10 150 40 220 30-82 24-176-40-220z" opacity="0.9"/>
+    <path d="M220 160c6 80-14 154-58 198 18-70 18-150 58-198z" opacity="0.6"/>
+  </g>
+  <ellipse cx="210" cy="364" rx="76" ry="20" fill="rgba(82,240,181,0.24)"/>
+</svg>
